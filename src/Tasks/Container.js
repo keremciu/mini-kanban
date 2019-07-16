@@ -73,10 +73,10 @@ function Tasks() {
             <div className={`col-md-${12 / stages.length}`} key={key}>
               <div className="px-3 py-3 bg-white rounded shadow-sm">
                 <div className="row px-2">
-                  <div className="col-md-10">
+                  <div className="col-10">
                     <h2>{title}</h2>
                   </div>
-                  <div className="col-md-2">
+                  <div className="col-2">
                     <div
                       className="add-btn btn"
                       onClick={() => addEmptyTask(key)}

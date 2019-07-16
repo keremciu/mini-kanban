@@ -28,7 +28,7 @@ function Stage({ data, stage, removeTask, updateTask }) {
                 {...provided.dragHandleProps}
               >
                 <div className="row">
-                  <div className={task.text ? "col-md-9" : "col-md-12"}>
+                  <div className={task.text ? "col-8 col-md-9" : "col-12"}>
                     <EditableTask
                       updateTask={updateTask}
                       removeTask={removeTask}
@@ -38,7 +38,7 @@ function Stage({ data, stage, removeTask, updateTask }) {
                   </div>
                   {task.text && (
                     <React.Fragment>
-                      <div className="col-md-1">
+                      <div className="col-1">
                         <div className="basic-tooltip btn">
                           <Icon type="info" width="18" height="18" />
                           <span className="tooltiptext">
@@ -46,7 +46,7 @@ function Stage({ data, stage, removeTask, updateTask }) {
                           </span>
                         </div>
                       </div>
-                      <div className="col-md-2">
+                      <div className="col-2">
                         <div
                           className="remove-btn btn"
                           onClick={() => removeTask({ taskID: task.id, stage })}
