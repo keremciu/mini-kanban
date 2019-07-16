@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mini-kanban/static/css/main.c796aa96.chunk.css",
+    "main.js": "/mini-kanban/static/js/main.e65c1226.chunk.js",
+    "main.js.map": "/mini-kanban/static/js/main.e65c1226.chunk.js.map",
+    "runtime~main.js": "/mini-kanban/static/js/runtime~main.b28e786d.js",
+    "runtime~main.js.map": "/mini-kanban/static/js/runtime~main.b28e786d.js.map",
+    "static/js/2.3402338b.chunk.js": "/mini-kanban/static/js/2.3402338b.chunk.js",
+    "static/js/2.3402338b.chunk.js.map": "/mini-kanban/static/js/2.3402338b.chunk.js.map",
+    "index.html": "/mini-kanban/index.html",
+    "precache-manifest.2ef6718ef5afc4d4838ef1b833c610ad.js": "/mini-kanban/precache-manifest.2ef6718ef5afc4d4838ef1b833c610ad.js",
+    "service-worker.js": "/mini-kanban/service-worker.js",
+    "static/css/main.c796aa96.chunk.css.map": "/mini-kanban/static/css/main.c796aa96.chunk.css.map"
+  }
+}
