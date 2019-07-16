@@ -2,6 +2,8 @@
 
 This is an example web application of using useReducer of React Hooks as an alternative to Redux.
 
+![minikanban interface](/screenshot.png "how it looks")
+
 I used [Create React App](https://github.com/facebook/create-react-app) to create this application.
 
 ## Usage
