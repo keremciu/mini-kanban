@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "mini-kanban",
+  "name": "MiniKanban",
   "icons": [
     {
       "src": "favicon.ico",
