@@ -1,68 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Mini-Kanban
 
-## Available Scripts
+This is an example web application of using useReducer of React Hooks as an alternative to Redux.
 
-In the project directory, you can run:
+I used [Create React App](https://github.com/facebook/create-react-app) to create this application.
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It's a web-application and keeps your data inside localStorage. You can use as a real application as long as GitHub serves open-source projects :)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Install & Run
 
-### `npm test`
+You can play with the project on your local environment after running these commands:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`yarn` or `npm install`
 
-### `npm run build`
+`yarn start` or `npm start`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Explanation
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+I have only one dependency for drag & drop functionality `react-beautiful-dnd`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I used css file of bootstrap in index.html for styling.
 
-### `npm run eject`
+First place to look would be Store.js, it shows how I handled useReducer functionality and persisted data inside localStorage.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I created a sub-application called Tasks inside my source folder. It's easily pluggable to anyproject, it has only Store.js dependency.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> inside Tasks application:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+I made a file called stages.js to make generic stages for the kanban board. If you'd like to make another stage, you just need to add a new stage inside stages.js file.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+I connected to context data only from Container.js to show every data change functionality in one place. It would be nice to use factory function to get dispatch and put whole action creators inside actions.js but I left it like this after seeing it's not necessary step :)
