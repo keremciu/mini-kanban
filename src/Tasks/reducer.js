@@ -7,13 +7,15 @@ import {
 } from "./actions";
 import stages from "./stages";
 
-const initialState = {
+export const getInitialState = stages => ({
   ...stages.reduce((mem, { key }) => {
     mem[key] = [];
     return mem;
   }, {}),
   searchTerm: ""
-};
+});
+
+const initialState = getInitialState(stages);
 
 function create_UUID() {
   let dt = new Date().getTime();
