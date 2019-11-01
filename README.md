@@ -10,7 +10,7 @@ I used [Create React App](https://github.com/facebook/create-react-app) to creat
 
 ## Usage
 
-It's a web-application and keeps your data inside localStorage. You can use as a real application as long as GitHub serves open-source projects on [http://kerem.ws/mini-kanban](http://kerem.ws/mini-kanban).
+It's a web-application and keeps your data inside localStorage. You can use as a real application as long as GitHub serves open-source projects on [https://keremciu.github.io/mini-kanban](http://keremciu.github.io/mini-kanban).
 
 ## Install & Run
 
